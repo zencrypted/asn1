@@ -4,18 +4,19 @@
     <link rel="stylesheet" href="x509.css" />
 </head><body><nav>
     <a href="https://x509.chat">X.509</a>
-    <a href="https://asn1.zencrypted.uk/" style="background:#ededed;">X.680</a>
+    <a href="https://asn1.zencrypted.uk/">X.680</a>
  </nav><header>
     <h1>Compiler X.680</h1>
 </header><aside>
     <article>
         <section>
             <h3>ASN.1 Compiler X.680</h3>
-            <div>ASN.1 компілятор X.680 генерує чистий, DER-сумісний Swift-код на базі бібліотеки Apple swift-asn1.
-                 ISO 8824 ITU/IETF X.680-690 ERP/1 ASN.1 DER Code Generation Compiler
-                 created by Namdak Tönpa.</div><br/>
+            <div>Спочатку Максим Сохацький написав ISO 8824 ITU/IETF ASN.1 компілятор X.680—X.690, що генерує чистий,
+                 DER-сумісний Swift-код на базі розміточного парсера apple/swift-asn1 (2023). Потім Ігор Горобець розширив
+                 цей компілятор на шість мов програмування: C, Swift, Rust, Go, Java, TypeScript; портувавши
+                 розміточний парсер ці мови (2026).</div><br/>
         <figure>
-        <code> $ ./asn1.ex</code>
+        <code> $ elixir asn1.ex</code>
         </figure>
         </section>
         <section>
@@ -40,33 +41,109 @@
 <main>
     <article>
     <section>
-        <h3>ARTICLES</h3>
+        <h3>ПУБЛІКАЦІЇ</h3>
 
         <p>The detailed worklog is presented as series of articles.</p>
 
         <p>
 
-* <a href="https://tonpa.guru/stream/2010/2010-10-18 LDAP.htm">2010-10-18 LDAP</a><br>
-* <a href="https://tonpa.guru/stream/2020/2020-02-03 Кваліфікований Електронний Підпис.htm">2020-02-03 Кваліфікований Електронний Підпис</a><br>
-* <a href="https://tonpa.guru/stream/2023/2023-06-22 Месенжер.htm">2023-06-22 CMS Месенжер (Пітч)</a><br>
-* <a href="https://chat.erp.uno">2023-06-30 ЧАТ X.509 (Домашня сторінка)</a><br>
-* <a href="https://tonpa.guru/stream/2023/2023-07-05 CMS SMIME.htm">2023-07-05 CMS S/MIME</a><br>
-* <a href="https://tonpa.guru/stream/2023/2023-07-16 CMS Compliance.htm">2023-07-16 CMS Compliance</a><br>
-* <a href="https://tonpa.guru/stream/2023/2023-07-20 LDAP Compliance.htm">2023-07-20 LDAP Compliance</a><br>
-* <a href="https://ldap.erp.uno">2023-07-25 LDAP 13.7.24 (Домашня сторінка)</a><br>
-* <a href="https://authority.erp.uno">2023-07-30 CA X.509 (Домашня сторінка)</a><br>
-* <a href="https://tonpa.guru/stream/2023/2023-07-21 CMP CMC EST.htm">2023-07-21 CMP/CMC/EST</a><br>
-* <a href="https://tonpa.guru/stream/2023/2023-07-27 MLS.htm">2023-07-21 MLS ROOM CHAT</a><br>
-* <a href="https://tonpa.guru/stream/2023/2023-08-05 CA CURVE.htm">2023-08-05 CA CURVE</a><br>
-* <a href="https://tonpa.guru/stream/2023/2023-08-07 CHAT ASN.1.htm">2023-08-07 CHAT ASN.1</a><br>
-* <a href="https://tonpa.guru/stream/2023/2023-08-08 ASN.1 Компілятор.htm">2023-08-08 ASN.1 Компілятор</a><br>
-* <a href="https://tonpa.guru/stream/2023/2023-09-01 ASN1.EX X.680.htm">2023-09-01 ASN1.EX X.680</a><br>
-* <a href="https://tonpa.guru/stream/2024/2024-10-29 EST.htm">2024-10-29 EST сервер 7030</a><br>
-* <a href="https://tonpa.guru/stream/2024/2024-11-17 EUDI.htm">2024-11-17 EUDI</a><br>
-* <a href="https://tonpa.guru/stream/2024/2024-11-20 CBOR COSE.htm">2024-11-20 CBOR COSE</a><br>
-* <a href="https://tonpa.guru/stream/2024/2024-11-21 MSO MDoc.htm">2024-11-21 MSO MDoc</a><br>
+• <a href="https://tonpa.guru/stream/2010/2010-10-18 LDAP.htm">2010-10-18 LDAP</a><br>
+• <a href="https://tonpa.guru/stream/2020/2020-02-03 Кваліфікований Електронний Підпис.htm">2020-02-03 Кваліфікований Електронний Підпис</a><br>
+• <a href="https://tonpa.guru/stream/2023/2023-06-22 Месенжер.htm">2023-06-22 CMS Месенжер (Пітч)</a><br>
+• <a href="https://chat.n2o.dev">2023-06-30 ЧАТ X.509 (Домашня сторінка)</a><br>
+• <a href="https://tonpa.guru/stream/2023/2023-07-05 CMS SMIME.htm">2023-07-05 CMS S/MIME</a><br>
+• <a href="https://tonpa.guru/stream/2023/2023-07-16 CMS Compliance.htm">2023-07-16 CMS Compliance</a><br>
+• <a href="https://tonpa.guru/stream/2023/2023-07-20 LDAP Compliance.htm">2023-07-20 LDAP Compliance</a><br>
+• <a href="https://ldap.erp.uno">2023-07-25 LDAP 13.7.24 (Домашня сторінка)</a><br>
+• <a href="https://ca.n2o.dev">2023-07-30 CA X.509 (Домашня сторінка)</a><br>
+• <a href="https://tonpa.guru/stream/2023/2023-07-21 CMP CMC EST.htm">2023-07-21 CMP/CMC/EST</a><br>
+• <a href="https://tonpa.guru/stream/2023/2023-07-27 MLS.htm">2023-07-21 MLS ROOM CHAT</a><br>
+• <a href="https://tonpa.guru/stream/2023/2023-08-05 CA CURVE.htm">2023-08-05 CA CURVE</a><br>
+• <a href="https://tonpa.guru/stream/2023/2023-08-07 CHAT ASN.1.htm">2023-08-07 CHAT ASN.1</a><br>
+• <a href="https://tonpa.guru/stream/2023/2023-08-08 ASN.1 Компілятор.htm">2023-08-08 ASN.1 Компілятор</a><br>
+• <a href="https://tonpa.guru/stream/2023/2023-09-01 ASN1.EX X.680.htm">2023-09-01 ASN1.EX X.680</a><br>
+• <a href="https://tonpa.guru/stream/2024/2024-10-29 EST.htm">2024-10-29 EST сервер 7030</a><br>
+• <a href="https://tonpa.guru/stream/2024/2024-11-17 EUDI.htm">2024-11-17 EUDI</a><br>
+• <a href="https://tonpa.guru/stream/2024/2024-11-20 CBOR COSE.htm">2024-11-20 CBOR COSE</a><br>
+• <a href="https://tonpa.guru/stream/2024/2024-11-21 MSO MDoc.htm">2024-11-21 MSO MDoc</a><br>
 
         </p>
+    </section>
+    <section>
+        <h3>LTE</h3>
+        <figure><code>
+Attribute-ASN1Module.asn1                       MAP-SM-DataTypes.asn1
+Basic-Service-Elements.asn1                     MAP-SS-Code.asn1
+MAP-ApplicationContexts.asn1                    MAP-SS-DataTypes.asn1
+MAP-BS-Code.asn1                                MAP-SupplementaryServiceOperations.asn1
+MAP-CallHandlingOperations.asn1                 MAP-TS-Code.asn1
+MAP-CH-DataTypes.asn1                           MobileDomainDefinitions.asn1
+MAP-CommonDataTypes.asn1                        SS-DataTypes.asn1
+MAP-DialogueInformation.asn1                    SS-Errors.asn1
+MAP-ER-DataTypes.asn1                           SS-Operations.asn1
+MAP-Errors.asn1                                 SS-Protocol.asn1
+MAP-ExtensionDataTypes.asn1                     TS24007L3.asn1
+MAP-GR-DataTypes.asn1                           TS24008IES.asn1
+MAP-Group-Call-Operations.asn1                  TS24008Msgs.asn1
+MAP-LCS-DataTypes.asn1                          TS24011IES.asn1
+MAP-LocationServiceOperations.asn1              TS24011Msgs.asn1
+MAP-MobileServiceOperations.asn1                TS24301IES.asn1
+MAP-MS-DataTypes.asn1                           TS24301Msgs.asn1
+MAP-OM-DataTypes.asn1                           TS24501IES.asn1
+MAP-OperationAndMaintenanceOperations.asn1      TS24501Msgs.asn1
+MAP-Protocol.asn1                               TS44018IES.asn1
+MAP-ShortMessageServiceOperations.asn1          TS44018Msgs.asn1
+        </code></figure>
+    </section>
+    <section>
+        <h3>3GPP</h3>
+        <figure><code>
+EUTRA-InterNodeDefinitions.asn1         NBIOT-RRC-Definitions.asn1              NR-Sidelink-Preconf.asn1
+EUTRA-RRC-Definitions.asn1              NBIOT-UE-Variables.asn1                 NR-UE-Variables.asn1
+EUTRA-Sidelink-Preconf.asn1             NR-InterNodeDefinitions.asn1            PC5-RRC-Definitions.asn1
+EUTRA-UE-Variables.asn1                 NR-RRC-Definitions.asn1
+NBIOT-InterNodeDefinitions.asn1         NR-Sidelink-DiscoveryMessage.asn1
+        </code></figure>
+    </section>
+    <section>
+        <h3>GSM</h3>
+        <figure><code>
+GSMMAP.asn1                                     MAP-MS-DataTypes.asn1
+MAP-ApplicationContexts.asn1                    MAP-OM-DataTypes.asn1
+MAP-BS-Code.asn1                                MAP-OperationAndMaintenanceOperations.asn1
+MAP-CallHandlingOperations.asn1                 MAP-Protocol.asn1
+MAP-CH-DataTypes.asn1                           MAP-ShortMessageServiceOperations.asn1
+MAP-CommonDataTypes.asn1                        MAP-SM-DataTypes.asn1
+MAP-DialogueInformation.asn1                    MAP-SS-Code.asn1
+MAP-ER-DataTypes.asn1                           MAP-SS-DataTypes.asn1
+MAP-Errors.asn1                                 MAP-SupplementaryServiceOperations.asn1
+MAP-ExtensionDataTypes.asn1                     MAP-TS-Code.asn1
+MAP-GR-DataTypes.asn1                           MobileDomainDefinitions.asn1
+MAP-Group-Call-Operations.asn1                  SS-DataTypes.asn1
+MAP-LCS-DataTypes.asn1                          SS-Errors.asn1
+MAP-LocationServiceOperations.asn1              SS-Operations.asn1
+MAP-MobileServiceOperations.asn1                SS-Protocol.asn1
+        </code></figure>
+    </section>
+    <section>
+        <h3>MHS/IPMS</h3>
+        <figure><code>
+IPMSExtendedBodyPartTypes.asn1                  MHSRoutingORAddressSubtree.asn1
+IPMSExtendedBodyPartTypes2.asn1                 MSAbstractService.asn1
+IPMSExtendedVoiceBodyPartType.asn1              MSGeneralAttributeTypes.asn1
+IPMSFileTransferBodyPartType.asn1               MSGeneralAutoActionTypes.asn1
+IPMSForwardedContentBodyPartType.asn1           MSMatchingRules.asn1
+IPMSForwardedReportBodyPartType.asn1            MSObjectIdentifiers.asn1
+IPMSHeadingExtensions.asn1                      MSUpperBounds.asn1
+IPMSInformationObjects.asn1                     MTAAbstractService.asn1
+IPMSObjectIdentifiers.asn1                      MTSAbstractService.asn1
+IPMSSecurityExtensions.asn1                     MTSAbstractService88.asn1
+IPMSUpperBounds.asn1                            MTSObjectIdentifiers.asn1
+MHSDirectoryObjectsAndAttributes.asn1           MTSUpperBounds.asn1
+MHSObjectIdentifiers.asn1                       Remote-Operations-Generic-ROS-PDUs.asn1
+MHSRoutingDirectoryObjects.asn1                 Remote-Operations-Information-Objects.asn1
+MHSRoutingObjectIdentifiers.asn1                Remote-Operations-Useful-Definitions.asn1
+        </code></figure>
     </section>
     <section>
         <h3>X SERIES</h3>
@@ -154,10 +231,7 @@ Videotex-Coding-Attributes.asn1
            To regenerate <code>Sources/Suite/Basic</code> folder use <code>./asn1.ex</code> script.</p>
 
         <figure><code>
-CHAT.asn1
-DSTU.asn1
-KEP.asn1
-LDAP.asn1
+MESSAGE-v1.asn1 CHAT-v2.asn1 DSTU.asn1 KEP.asn1 LDAP.asn1
         </code></figure>
 
     </section>
